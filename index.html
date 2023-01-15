@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dice Simulator</title>
+  </head>
+  <body>
+    <h1>Dice Simulator</h1>
+    <img id="die" src="die-1.png" alt="Die">
+    <button onclick="rollDie()">Roll</button>
+
+    <script>
+      function rollDie() {
+        var randomNumber = Math.floor(Math.random() * 6) + 1;
+        var dieImage = document.getElementById("die");
+        dieImage.src = "die-" + randomNumber + ".png";
+      }
+    </script>
+  </body>
+</html>
